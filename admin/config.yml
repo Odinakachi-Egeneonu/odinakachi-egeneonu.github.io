@@ -1,0 +1,135 @@
+# Portfolio editor settings.
+# ONE-TIME SETUP: replace YOUR-GITHUB-USERNAME below (twice) with your GitHub username.
+backend:
+  name: github
+  repo: YOUR-GITHUB-USERNAME/YOUR-GITHUB-USERNAME.github.io
+  branch: main
+  commit_messages:
+    update: "Update {{collection}}: {{slug}}"
+    uploadMedia: "Upload {{path}}"
+
+media_folder: assets/uploads
+public_folder: assets/uploads
+
+collections:
+  # ---------------------------------------------------------------
+  - name: profile
+    label: My profile
+    description: Your photo, CV, contact links, about text, skills and services.
+    files:
+      - name: site
+        label: Profile, skills and services
+        file: data/site.json
+        format: json
+        fields:
+          - { name: name, label: Full name, widget: string }
+          - { name: short_name, label: Short name (shown in the menu), widget: string }
+          - { name: initials, label: Initials (used when there is no photo), widget: string }
+          - { name: title, label: Job title, widget: string }
+          - { name: photo, label: Profile photo, widget: image, required: false, hint: "A clear, well-lit head-and-shoulders photo. Portrait shape works best." }
+          - { name: cv, label: CV (PDF), widget: file, required: false, hint: "Upload your CV as a PDF. The Download CV buttons appear once this is filled." }
+          - { name: headline, label: Big headline on the home page, widget: string }
+          - { name: intro, label: Short introduction under the headline, widget: text }
+          - { name: availability, label: Availability line, widget: string }
+          - { name: location, label: Location line, widget: string }
+          - { name: email, label: Email, widget: string }
+          - { name: linkedin, label: LinkedIn URL, widget: string, required: false }
+          - { name: github, label: GitHub URL, widget: string, required: false, hint: "For example https://github.com/your-username. Leave empty to hide GitHub links." }
+          - { name: whatsapp, label: WhatsApp number (optional), widget: string, required: false, hint: "International format, for example 2348012345678. Leave empty to hide." }
+          - { name: formspree_id, label: Formspree form ID (optional), widget: string, required: false, hint: "From formspree.io, e.g. xyzabcd. Without it, the contact form opens the visitor's email app instead." }
+          - { name: about, label: About me paragraphs, widget: list, field: { name: item, label: Paragraph, widget: text } }
+          - { name: education, label: Education, widget: string }
+          - { name: industries, label: Industries I focus on, widget: list, field: { name: item, label: Industry, widget: string } }
+          - name: process
+            label: How I work (4 steps)
+            widget: list
+            fields:
+              - { name: title, label: Step, widget: string }
+              - { name: text, label: Description, widget: text }
+          - name: tools
+            label: Tools and levels
+            widget: list
+            fields:
+              - { name: name, label: Tool, widget: string }
+              - { name: level, label: "Level (1 Beginner, 2 Intermediate, 3 Advanced, 4 Expert)", widget: number, value_type: int, min: 1, max: 4 }
+              - { name: detail, label: What I do with it, widget: string }
+          - { name: methods, label: Skills list, widget: list, field: { name: item, label: Skill, widget: string } }
+          - { name: learning, label: Currently learning, widget: list, required: false, field: { name: item, label: Item, widget: string } }
+          - name: stats
+            label: Numbers under the hero (the project count is added automatically)
+            widget: list
+            fields:
+              - { name: value, label: Number, widget: string }
+              - { name: label, label: Label, widget: string }
+          - name: hero_chart
+            label: Home page chart
+            widget: object
+            collapsed: true
+            fields:
+              - { name: title, label: Chart title, widget: string }
+              - { name: caption, label: Caption, widget: string }
+              - { name: project, label: Linked project slug, widget: string, required: false }
+              - { name: prefix, label: Value prefix, widget: string, required: false }
+              - { name: suffix, label: Value suffix, widget: string, required: false }
+              - name: bars
+                label: Bars
+                widget: list
+                fields:
+                  - { name: label, label: Label, widget: string }
+                  - { name: value, label: Value, widget: number, value_type: float }
+          - name: services
+            label: Freelance services
+            widget: list
+            fields:
+              - { name: name, label: Service, widget: string }
+              - { name: text, label: Description, widget: text }
+              - { name: price, label: Price, widget: string }
+          - { name: services_note, label: Note under the services, widget: text }
+
+  # ---------------------------------------------------------------
+  - name: work
+    label: Projects
+    description: Add, edit, reorder or remove projects. The first project ticked as Featured becomes the big spotlight on the home page.
+    files:
+      - name: projects
+        label: All projects
+        file: data/projects.json
+        format: json
+        fields:
+          - name: projects
+            label: Projects
+            label_singular: Project
+            widget: list
+            summary: "{{fields.short_title}} ({{fields.status}})"
+            fields:
+              - { name: title, label: Full title, widget: string }
+              - { name: short_title, label: Short title (for the project list), widget: string }
+              - { name: slug, label: "Link name (lowercase, dashes, no spaces, e.g. sales-dashboard)", widget: string, pattern: ['^[a-z0-9-]+$', "Use lowercase letters, numbers and dashes only"] }
+              - { name: category, label: Type, widget: select, options: ["Business & BI", "Research & Statistics"] }
+              - { name: status, label: Status, widget: select, options: ["Completed", "In progress"] }
+              - { name: featured, label: Featured, widget: boolean, default: false }
+              - { name: summary, label: One- or two-sentence summary, widget: text }
+              - { name: image, label: Dashboard screenshot, widget: image, required: false }
+              - { name: image_alt, label: Screenshot description (for screen readers and Google), widget: string, required: false }
+              - { name: tools, label: Tools, widget: list, field: { name: item, label: Tool, widget: string } }
+              - { name: dataset, label: Dataset, widget: string, required: false }
+              - name: highlights
+                label: Headline numbers (up to 3)
+                widget: list
+                required: false
+                fields:
+                  - { name: value, label: Number, widget: string }
+                  - { name: label, label: What it means, widget: string }
+              - { name: problem, label: Problem statement, widget: text, required: false }
+              - { name: questions, label: Business questions, widget: list, required: false, field: { name: item, label: Question, widget: text } }
+              - { name: did, label: What I did, widget: list, required: false, field: { name: item, label: Step, widget: text } }
+              - { name: findings, label: Key findings, widget: list, required: false, field: { name: item, label: Finding, widget: text } }
+              - { name: takeaway, label: Business takeaway, widget: list, required: false, field: { name: item, label: Recommendation, widget: text } }
+              - name: links
+                label: Links (file, dashboard, GitHub)
+                widget: list
+                required: false
+                fields:
+                  - { name: label, label: Button text, widget: string }
+                  - { name: url, label: URL, widget: string }
+              - { name: note, label: Note (optional, e.g. confidentiality), widget: string, required: false }

@@ -1,0 +1,154 @@
+{
+  "name": "Egeneonu Odinakachi A.J",
+  "short_name": "Odinakachi",
+  "initials": "EO",
+  "title": "Data Analyst",
+  "headline": "I turn messy data into decisions people can act on.",
+  "intro": "I clean, model and analyse business data in Excel, SQL and Power BI, then explain what it means in plain language. I work best on problems in finance, fintech, supply chain and tech.",
+  "availability": "Open to remote roles and freelance projects",
+  "location": "Imo, Nigeria. Available to work remotely.",
+  "email": "odinakachiegeneonu0@gmail.com",
+  "linkedin": "https://www.linkedin.com/in/odinakachi-egeneonu-b94979288",
+  "github": "",
+  "whatsapp": "",
+  "cv": "",
+  "photo": "",
+  "formspree_id": "",
+  "about": [
+    "I came into data analytics through a love of problem-solving. I like taking a messy spreadsheet, finding what is actually going on, and turning it into something a manager can act on the same day.",
+    "I studied Project Management Technology at the Federal University of Technology Owerri (FUTO), graduating in 2025, and I have a background in IT. Project management taught me to start every analysis by scoping the real question, agreeing on what success looks like, and delivering on time.",
+    "My work so far spans retail sales, banking transactions, customer retention and public health research. I am currently learning Python and working towards my first professional certification."
+  ],
+  "education": "B.Tech, Project Management Technology — Federal University of Technology Owerri (FUTO), 2025",
+  "industries": [
+    "Finance",
+    "Fintech",
+    "Supply chain",
+    "IT and tech"
+  ],
+  "process": [
+    {
+      "title": "Understand the question",
+      "text": "Agree on the decision the analysis has to support before touching the data."
+    },
+    {
+      "title": "Clean and prepare",
+      "text": "Fix duplicates, gaps, inconsistent labels and formats so the numbers can be trusted."
+    },
+    {
+      "title": "Analyse and visualise",
+      "text": "Model the data, test what matters and build dashboards people can read at a glance."
+    },
+    {
+      "title": "Recommend actions",
+      "text": "Turn findings into clear, practical next steps for the business."
+    }
+  ],
+  "tools": [
+    {
+      "name": "Excel",
+      "level": 2,
+      "detail": "Pivot tables, Power Query, Power Pivot, star schema models, dashboards"
+    },
+    {
+      "name": "SQL / MySQL",
+      "level": 2,
+      "detail": "Querying, joins, aggregation and data cleaning"
+    },
+    {
+      "name": "Power BI",
+      "level": 2,
+      "detail": "Data modelling, DAX measures, interactive reports"
+    },
+    {
+      "name": "Python",
+      "level": 1,
+      "detail": "Currently learning: pandas and data cleaning"
+    }
+  ],
+  "methods": [
+    "Data cleaning and validation",
+    "KPI analysis and reporting",
+    "Dashboard design",
+    "Data modelling (Power Pivot, star schema)",
+    "Statistical testing (Chi-square, Kruskal-Wallis, Mann-Whitney U)",
+    "Survey and research data analysis",
+    "Turning findings into business recommendations"
+  ],
+  "learning": [
+    "Python for data analysis",
+    "Professional certification (in progress)"
+  ],
+  "services": [
+    {
+      "name": "Data cleaning",
+      "text": "Messy spreadsheets or exports turned into one clean, consistent, analysis-ready dataset.",
+      "price": "From ₦25,000 / $30"
+    },
+    {
+      "name": "Excel reports and dashboards",
+      "text": "Pivot-based reports and a one-page dashboard you can refresh yourself.",
+      "price": "From ₦40,000 / $50"
+    },
+    {
+      "name": "SQL data analysis",
+      "text": "Queries that answer your business questions, with a short written summary.",
+      "price": "From ₦40,000 / $50"
+    },
+    {
+      "name": "Power BI dashboards",
+      "text": "An interactive Power BI report with a proper data model and key measures.",
+      "price": "From ₦70,000 / $90"
+    },
+    {
+      "name": "Monthly KPI reporting",
+      "text": "A recurring report tracking the numbers that matter to your business.",
+      "price": "From ₦60,000 / $80 a month"
+    },
+    {
+      "name": "Research and survey analysis",
+      "text": "Statistical tests and a clear results write-up for surveys and academic studies.",
+      "price": "Custom quote"
+    }
+  ],
+  "services_note": "Final price depends on the size and condition of your data. Tell me about your data and what you need, and I will send a quote.",
+  "stats": [
+    {
+      "value": "50,000+",
+      "label": "rows of business data cleaned and analysed"
+    },
+    {
+      "value": "838",
+      "label": "survey and lab records analysed for research"
+    },
+    {
+      "value": "Remote",
+      "label": "ready to work with teams anywhere"
+    }
+  ],
+  "hero_chart": {
+    "title": "Global Superstore: sales by year",
+    "caption": "Real figures from my Global Superstore analysis.",
+    "project": "global-superstore",
+    "prefix": "$",
+    "suffix": "M",
+    "bars": [
+      {
+        "label": "2011",
+        "value": 2.26
+      },
+      {
+        "label": "2012",
+        "value": 2.68
+      },
+      {
+        "label": "2013",
+        "value": 3.41
+      },
+      {
+        "label": "2014",
+        "value": 4.3
+      }
+    ]
+  }
+}

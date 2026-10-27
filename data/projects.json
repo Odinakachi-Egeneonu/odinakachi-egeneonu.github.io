@@ -1,0 +1,305 @@
+{
+  "projects": [
+    {
+      "slug": "global-superstore",
+      "title": "Global Superstore Sales Performance Dashboard (2011–2014)",
+      "short_title": "Global Superstore sales and profit analysis",
+      "category": "Business & BI",
+      "status": "Completed",
+      "featured": true,
+      "summary": "A star schema data model and interactive Excel dashboard showing where $12.6M of revenue and $1.47M of profit came from across 147 countries.",
+      "tools": [
+        "Excel",
+        "Power Pivot",
+        "Star schema",
+        "Pivot tables",
+        "Slicers"
+      ],
+      "dataset": "Global Superstore dataset · 51,290 order lines · 2011–2014",
+      "image": "",
+      "image_alt": "Global Superstore sales and profit dashboard in Excel showing revenue, profit, regional sales, category performance and sales trend",
+      "highlights": [
+        {
+          "value": "$12.64M",
+          "label": "revenue analysed"
+        },
+        {
+          "value": "11.6%",
+          "label": "profit margin"
+        },
+        {
+          "value": "+90%",
+          "label": "sales growth, 2011 to 2014"
+        }
+      ],
+      "problem": "Global Superstore sells furniture, office supplies and technology products in 147 countries, but four years of order data sat in one flat table of more than 51,000 rows. Management had no quick way to see where revenue and profit were coming from, or how performance was changing over time.",
+      "questions": [
+        "How much revenue and profit did the business generate from 2011 to 2014, and what is its profit margin?",
+        "Are sales growing, and when are the peak sales periods?",
+        "Which regions bring in the most sales?",
+        "Which product categories and sub-categories drive revenue and profit?",
+        "Which customer segment places the most orders?",
+        "Which products sell the most?"
+      ],
+      "did": [
+        "Worked with 51,290 order lines (24 fields) covering 7 markets, 13 regions and 147 countries.",
+        "Built a star schema data model in Power Pivot: one Orders fact table linked to Product, Customer, Date and Geography dimension tables.",
+        "Added Year and Month fields from the order date for time analysis.",
+        "Built pivot tables for revenue, profit, regions, categories, segments, top products and monthly trends.",
+        "Designed an interactive one-page dashboard with KPI cards and slicers for Year, Region and Category."
+      ],
+      "findings": [
+        "$12.64M total revenue and $1.47M gross profit, about an 11.6% profit margin.",
+        "Sales grew every year, nearly doubling from $2.26M in 2011 to $4.30M in 2014.",
+        "Sales are seasonal: Q4 brings in about 34% of yearly revenue, and November and December are the strongest months.",
+        "Technology is the top category, at about 38% of revenue and $664K profit. Furniture brings in about a third of revenue but only around 19% of profit.",
+        "The Central region leads with about $2.86M in sales, roughly a fifth of the total.",
+        "Consumers place about 52% of all orders (26,518 of 51,290).",
+        "Smartphones dominate best-sellers: Apple, Cisco, Motorola and Nokia full-size smartphones are four of the top five products."
+      ],
+      "takeaway": [
+        "Plan stock, staffing and marketing around the Q4 peak, especially November and December.",
+        "Keep investing in Technology, the biggest earner on both revenue and profit, and smartphones in particular.",
+        "Review Furniture pricing, discounts and shipping costs: it sells well but returns far less profit per dollar.",
+        "Use the Central region's performance as a benchmark for lower-performing regions.",
+        "Focus retention and loyalty efforts on the Consumer segment, which drives most orders."
+      ],
+      "links": []
+    },
+    {
+      "slug": "jurix-customer-retention",
+      "title": "Customer Tracker and Retention System",
+      "short_title": "Customer tracker and retention system",
+      "category": "Business & BI",
+      "status": "Completed",
+      "featured": true,
+      "summary": "An automated Excel tracker that consolidates three bank statement sources into 1,143 unique customers and sorts them into VIP, active, inactive and new.",
+      "tools": [
+        "Excel",
+        "Power Query",
+        "Automation"
+      ],
+      "dataset": "Moniepoint, PalmPay and Nombank statement data · 1,143 unique customers",
+      "image": "",
+      "image_alt": "Customer tracker workbook showing customer segments and follow-up schedule",
+      "highlights": [
+        {
+          "value": "1,143",
+          "label": "unique customers"
+        },
+        {
+          "value": "3",
+          "label": "bank sources merged"
+        }
+      ],
+      "problem": "A payments business was tracking customer activity by hand. There was no clear view of who the VIP, active, inactive or new customers were, and no system to schedule follow-ups and keep customers coming back.",
+      "questions": [],
+      "did": [
+        "Consolidated statement data from Moniepoint, PalmPay and Nombank into a single customer list of 1,143 unique customers.",
+        "Built an automated Excel tracking workbook that categorises customers as VIP, Active, Inactive or New.",
+        "Explored automation options for keeping the tracker up to date: CSV imports with Power Query, Zapier and Google Forms."
+      ],
+      "findings": [],
+      "takeaway": [
+        "Use the automatic customer categories to run a retention strategy, with scheduled follow-ups for inactive and new customers."
+      ],
+      "links": [],
+      "note": "Customer names and transaction details are confidential and are not shown."
+    },
+    {
+      "slug": "novabridge-bank",
+      "title": "NovaBridge Bank Transaction Analysis",
+      "short_title": "NovaBridge Bank transaction analysis",
+      "category": "Business & BI",
+      "status": "Completed",
+      "featured": true,
+      "summary": "A two-page Excel dashboard built after cleaning duplicate records, inconsistent text, outlier transactions and currency labelling issues. DataBeginners Week 4 Excel Challenge.",
+      "tools": [
+        "Excel",
+        "Data cleaning",
+        "Dashboard design"
+      ],
+      "dataset": "NovaBridge Bank Nigeria transaction data (DataBeginners Week 4)",
+      "image": "",
+      "image_alt": "NovaBridge Bank two-page Excel transaction dashboard",
+      "highlights": [],
+      "problem": "",
+      "questions": [],
+      "did": [
+        "Investigated and resolved duplicate records, inconsistent text casing, outlier transactions and currency labelling issues.",
+        "Built a two-page Excel dashboard on the cleaned data."
+      ],
+      "findings": [],
+      "takeaway": [],
+      "links": []
+    },
+    {
+      "slug": "who-life-expectancy",
+      "title": "Life Expectancy Analytics (WHO Data)",
+      "short_title": "Life expectancy analytics",
+      "category": "Business & BI",
+      "status": "Completed",
+      "featured": true,
+      "summary": "Excel and Power BI dashboards exploring which factors are linked to differences in life expectancy between countries.",
+      "tools": [
+        "Excel",
+        "Power BI"
+      ],
+      "dataset": "WHO life expectancy dataset (Kaggle)",
+      "image": "",
+      "image_alt": "Life expectancy dashboard comparing countries and health factors",
+      "highlights": [],
+      "problem": "Understand which factors are associated with differences in life expectancy across countries, and present the insights in a form decision-makers can use.",
+      "questions": [],
+      "did": [
+        "Built one dashboard in Excel and one in Power BI on the WHO dataset."
+      ],
+      "findings": [],
+      "takeaway": [],
+      "links": []
+    },
+    {
+      "slug": "olist-ecommerce",
+      "title": "Olist E-commerce Dashboard",
+      "short_title": "Olist e-commerce dashboard",
+      "category": "Business & BI",
+      "status": "In progress",
+      "featured": false,
+      "summary": "An Excel dashboard on the Olist Brazilian e-commerce dataset.",
+      "tools": [
+        "Excel"
+      ],
+      "dataset": "Olist Brazilian e-commerce dataset",
+      "image": "",
+      "image_alt": "Olist e-commerce Excel dashboard",
+      "highlights": [],
+      "problem": "",
+      "questions": [],
+      "did": [],
+      "findings": [],
+      "takeaway": [],
+      "links": []
+    },
+    {
+      "slug": "malaria-kap-study",
+      "title": "Malaria Knowledge, Attitude and Practice Study",
+      "short_title": "Malaria knowledge, attitude and practice study",
+      "category": "Research & Statistics",
+      "status": "Completed",
+      "featured": false,
+      "summary": "Survey analysis of malaria knowledge, attitudes and practices among 200 secondary school students at Ngwa High School, Aba.",
+      "tools": [
+        "Excel",
+        "Survey analysis"
+      ],
+      "dataset": "Primary survey data · 200 respondents · Ngwa High School, Aba",
+      "image": "",
+      "image_alt": "Charts summarising malaria survey results",
+      "highlights": [
+        {
+          "value": "200",
+          "label": "respondents"
+        }
+      ],
+      "problem": "Assess malaria-related knowledge, attitudes and practices among secondary school students.",
+      "questions": [],
+      "did": [],
+      "findings": [],
+      "takeaway": [],
+      "links": []
+    },
+    {
+      "slug": "end-of-life-care-study",
+      "title": "End-of-Life Care Study: Nurses at FMC Onitsha",
+      "short_title": "End-of-life care study",
+      "category": "Research & Statistics",
+      "status": "Completed",
+      "featured": false,
+      "summary": "Survey analysis of 108 nurses' attitudes and practices toward end-of-life care, using non-parametric tests.",
+      "tools": [
+        "Excel",
+        "Kruskal-Wallis",
+        "Mann-Whitney U"
+      ],
+      "dataset": "Primary survey data · 108 respondents · Federal Medical Centre, Onitsha",
+      "image": "",
+      "image_alt": "Charts summarising nurses' end-of-life care survey results",
+      "highlights": [
+        {
+          "value": "108",
+          "label": "respondents"
+        }
+      ],
+      "problem": "Assess nurses' attitudes and practices toward end-of-life care.",
+      "questions": [],
+      "did": [
+        "Reverse-scored negatively worded Likert items so all scores point the same way.",
+        "Compared groups of nurses using Kruskal-Wallis and Mann-Whitney U tests."
+      ],
+      "findings": [],
+      "takeaway": [],
+      "links": []
+    },
+    {
+      "slug": "personal-hygiene-study",
+      "title": "Personal Hygiene Practices Study: Girls Secondary School, Ojoto",
+      "short_title": "Personal hygiene practices study",
+      "category": "Research & Statistics",
+      "status": "Completed",
+      "featured": false,
+      "summary": "Survey analysis of personal hygiene practices among 154 female students and the factors associated with them.",
+      "tools": [
+        "Excel",
+        "Chi-square"
+      ],
+      "dataset": "Primary survey data · 154 respondents · Girls Secondary School, Ojoto",
+      "image": "",
+      "image_alt": "Charts summarising personal hygiene survey results",
+      "highlights": [
+        {
+          "value": "154",
+          "label": "respondents"
+        }
+      ],
+      "problem": "Assess personal hygiene practices among female students and the factors associated with them.",
+      "questions": [],
+      "did": [
+        "Tested the association between student characteristics and hygiene practices using Chi-square tests."
+      ],
+      "findings": [],
+      "takeaway": [],
+      "links": []
+    },
+    {
+      "slug": "geohelminth-contamination",
+      "title": "Geohelminth Contamination of Fruits and Vegetables: Oba Markets",
+      "short_title": "Geohelminth contamination of market produce",
+      "category": "Research & Statistics",
+      "status": "Completed",
+      "featured": false,
+      "summary": "Analysis of laboratory results from 376 fruit and vegetable samples to measure soil-transmitted parasite contamination.",
+      "tools": [
+        "Excel",
+        "Chi-square"
+      ],
+      "dataset": "Laboratory data · 376 samples · Oba markets",
+      "image": "",
+      "image_alt": "Charts summarising contamination rates across fruit and vegetable samples",
+      "highlights": [
+        {
+          "value": "376",
+          "label": "lab samples"
+        }
+      ],
+      "problem": "Measure geohelminth (soil-transmitted parasite) contamination in fruits and vegetables sold in Oba markets, a public health concern.",
+      "questions": [],
+      "did": [
+        "Consolidated laboratory results into an aggregate analysis workbook.",
+        "Tested contamination differences using Chi-square hypothesis tests."
+      ],
+      "findings": [],
+      "takeaway": [],
+      "links": []
+    }
+  ]
+}
